@@ -3,7 +3,8 @@ import openai
 import os
 
 # Load API key from environment variable
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = "sk-여기에_발급받은_OpenAI_API_키_입력"
+
 
 def generate_itinerary(destination, days, interests, budget):
     response = openai.ChatCompletion.create(
